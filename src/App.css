@@ -1,0 +1,100 @@
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    color: rgb(33, 37, 41);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+#search-box {
+    width: 241px;
+    height: 38px;
+    padding: 6px 12px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(206, 212, 218);
+    border-radius: 4px;
+}
+
+#search-box:focus {
+    border-color: #7952b3;
+    box-shadow: 0 0 0 3px rgb(121 82 179 / 25%);
+}
+
+#search-box:disabled {
+    background-color: rgb(233, 236, 239);
+}
+
+.clickkey {
+    font-size: 12px;
+    position: relative;
+    left:-56px;
+    padding: 4px;
+    border: 1px solid rgb(222, 226, 230);
+    pointer-events: none;
+    border-radius: 2px;
+    height: 24px;
+}
+
+#results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#results-table th {
+    padding: 8px;
+    border-bottom: 1px solid #000;
+}
+
+#results-table td {
+    padding: 8px;
+    border-bottom: 1px solid rgb(222, 226, 230);
+
+}
+
+#results-table th {
+    font-weight: 700;
+    text-align: left;
+}
+
+#pagination {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pagination button {
+    margin-right: 5px;
+    padding: 4px;
+}
+
+#limit-input-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#limit-input {
+    margin-left: auto;
+    height: 24px;
+    padding: 0 4px;
+    border: 1px solid rgb(222, 226, 230);
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.warning-message {
+    color: red;
+    margin-left: 10px;
+    font-size: 12px;
+}
